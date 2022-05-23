@@ -12,7 +12,7 @@ const firebaseConfig = {
   storageBucket: Constants.manifest.extra.storageBucket,
   messagingSenderId: Constants.manifest.extra.messagingSenderId,
   appId: Constants.manifest.extra.appId,
-  databaseURL:'https://academy-462dc-default-rtdb.europe-west1.firebasedatabase.app/'
+  databaseURL:Constants.manifest.extra.databaseURL
 };
 const Firebase = initializeApp(firebaseConfig);
 export const db = getFirestore(Firebase);
